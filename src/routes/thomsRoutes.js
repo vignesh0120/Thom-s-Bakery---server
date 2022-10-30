@@ -1,8 +1,11 @@
 const express = require("express");
 const router = express.Router();
+const Thoms = require("../schema/thomSchema");
+
+require("../db/db");
 
 const backery = [
-  { name: "bun", price: 20 },
+  { category: "backery", name: "bun", price: 20 },
   { name: "sandwitch", price: 30 },
   { name: "lassi", price: 20 },
   { name: "egg puff", price: 20 },
