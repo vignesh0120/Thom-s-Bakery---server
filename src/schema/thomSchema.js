@@ -14,7 +14,6 @@ const thomSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  img: Image,
 });
 
 module.exports = mongoose.model("Thoms", thomSchema);

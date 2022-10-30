@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 
-const Db = "mongo://0.0.0.0:27017/thomserver";
+const Db = "mongodb://0.0.0.0:27017/thomserver";
 
 mongoose.Promise = global.Promise;
 
 mongoose
   .connect(Db, {
     useNewUrlParser: true,
-    useUnifiedTopology: tru,
+    useUnifiedTopology: true,
   })
   .then(() => {
     console.log("connected");
